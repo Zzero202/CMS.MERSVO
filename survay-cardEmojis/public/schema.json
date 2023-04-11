@@ -1,0 +1,106 @@
+{
+  "inputs": [
+    {
+      "group": "Layout",
+      "name": "sidebarBackground",
+      "label": "Sidebar Background Color",
+      "type": "colorpicker",
+      "options": {
+        "allowtransparency": false,
+        "allowempty": false
+      }
+    },
+    {
+      "group": "Title",
+      "name": "titleText",
+      "label": "Text",
+      "type": "textbox",
+      "placeholder": "Title Text",
+      "isStyled": false
+    },
+    {
+      "group": "Title",
+      "name": "titleSettings",
+      "label": "Settings",
+      "type": "fontSettings",
+      "options": {
+        "allowtransparency": false,
+        "allowempty": false
+      }
+    },
+    {
+      "group": "Title",
+      "name": "titleColor",
+      "label": "Color",
+      "type": "colorpicker",
+      "options": {
+        "allowtransparency": false,
+        "allowempty": false
+      }
+    },
+    {
+      "group": "Question",
+      "name": "labelText",
+      "label": "Text",
+      "type": "textbox",
+      "placeholder": "label Text",
+      "isStyled": false
+    },
+    {
+      "group": "Question",
+      "name": "labelSettings",
+      "label": "Settings",
+      "type": "fontSettings",
+      "options": {
+        "allowtransparency": false,
+        "allowempty": false
+      }
+    },
+    {
+      "group": "Question",
+      "name": "labelColor",
+      "label": "Color",
+      "type": "colorpicker",
+      "options": {
+        "allowtransparency": false,
+        "allowempty": false
+      }
+    },
+    {
+      "group": "Type",
+      "name": "dropdownSelect",
+      "label": "Select",
+      "type": "dropdown",
+      "items": [
+        { "label": "Emojis", "value": "Emojis" },
+        { "label": "Rating", "value": "Rating" }
+      ]
+    },
+    {
+      "group": "Media",
+      "name": "mediaFile",
+      "label": "Media",
+      "locked": false,
+      "type": "fileupload",
+      "options": {
+        "maxfiles": 1
+      },
+      "validation": {
+        "required": false,
+        "fileextensions": [".jpg", ".png", ".mp4", ".ogg", ".webm"]
+      }
+    },
+    {
+      "group": "Media",
+      "name": "playbackVideo",
+      "label": "Playback Video",
+      "type": "checkbox"
+    },
+    {
+      "group": "Media",
+      "name": "muteVideo",
+      "label": "Mute Video",
+      "type": "checkbox"
+    }
+  ]
+}

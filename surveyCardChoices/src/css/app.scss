@@ -1,0 +1,27 @@
+// custom classes
+.media-container {
+  background-color: $gray-2
+}
+.defaultMedia {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-btn {
+  padding: 8px 24px;
+  border-radius: 28px;
+  &:hover {
+    box-shadow: 0 1px 5px rgb(0 0 0 / 20%),
+    0 2px 2px rgb(0 0 0 / 14%),
+    0 3px 1px -2px rgb(0 0 0 / 12%);
+  }
+}
+.radius-50 {
+  border-radius: 50%;
+}
+
+// Overwrite part of quasar classes props
+.text-caption {
+  line-height: 1rem;
+}

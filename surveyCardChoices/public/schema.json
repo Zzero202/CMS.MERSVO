@@ -1,0 +1,174 @@
+{
+  "inputs": [
+    {
+      "group": "Layout",
+      "name": "sidebarBackground",
+      "label": "Sidebar Background Color",
+      "type": "colorpicker",
+      "options": {
+        "allowtransparency": false,
+        "allowempty": false
+      }
+    },
+    {
+      "group": "Title",
+      "name": "titleText",
+      "label": "Text",
+      "type": "textbox",
+      "placeholder": "Title Text",
+      "isStyled": false
+    },
+    {
+      "group": "Title",
+      "name": "titleSettings",
+      "label": "Settings",
+      "type": "fontSettings",
+      "options": {
+        "allowtransparency": false,
+        "allowempty": false
+      }
+    },
+    {
+      "group": "Title",
+      "name": "titleColor",
+      "label": "Color",
+      "type": "colorpicker",
+      "options": {
+        "allowtransparency": false,
+        "allowempty": false
+      }
+    },
+    {
+      "group": "Question",
+      "name": "labelText",
+      "label": "Text",
+      "type": "textbox",
+      "placeholder": "label Text",
+      "isStyled": false
+    },
+    {
+      "group": "Question",
+      "name": "labelSettings",
+      "label": "Settings",
+      "type": "fontSettings",
+      "options": {
+        "allowtransparency": false,
+        "allowempty": false
+      }
+    },
+    {
+      "group": "Question",
+      "name": "labelColor",
+      "label": "Color",
+      "type": "colorpicker",
+      "options": {
+        "allowtransparency": false,
+        "allowempty": false
+      }
+    },
+    {
+      "group": "Type",
+      "name": "dropdownSelect",
+      "label": "Select",
+      "type": "dropdown",
+      "items": [
+        { "label": "Multiple Answers", "value": "Multiple Answers" },
+        { "label": "one answer", "value": "one answer" }
+      ]
+    },
+    {
+      "group": "Type",
+      "name": "choices",
+      "label": "",
+      "type": "group",
+      "options": {
+        "group": [
+          {
+            "name": "choice",
+            "label": "choice Label",
+            "type": "textbox",
+            "columns": 12,
+            "options": { "isStyled": false },
+            "valueType": "menu"
+          }
+        ]
+      }
+    },
+    {
+      "group": "Button",
+      "name": "btnLabel",
+      "label": "Label",
+      "type": "textbox",
+      "placeholder": "Button Text",
+      "isStyled": false
+    },
+    {
+      "group": "Button",
+      "name": "btnIcon",
+      "label": "Icon",
+      "type": "textbox",
+      "placeholder": "Icon from MDI icons",
+      "options": {
+        "hint": "Icon from MDI icons"
+      }
+    },
+    {
+      "group": "Button",
+      "name": "btnSettings",
+      "label": "Settings",
+      "type": "fontSettings"
+    },
+    {
+      "group": "Button",
+      "name": "btnColor",
+      "label": "Color",
+      "type": "colorpicker",
+      "options": {
+        "allowtransparency": false,
+        "allowempty": false
+      }
+    },
+    {
+      "group": "Button",
+      "name": "btnBg",
+      "label": "Background Color",
+      "type": "colorpicker",
+      "options": {
+        "allowtransparency": false,
+        "allowempty": false
+      }
+    },
+    {
+      "group": "Button",
+      "name": "btnActions",
+      "label": "Actions",
+      "type": "actions"
+    },
+    {
+      "group": "Media",
+      "name": "mediaFile",
+      "label": "Media",
+      "locked": false,
+      "type": "fileupload",
+      "options": {
+        "maxfiles": 1
+      },
+      "validation": {
+        "required": false,
+        "fileextensions": [".jpg", ".png", ".mp4", ".ogg", ".webm"]
+      }
+    },
+    {
+      "group": "Media",
+      "name": "playbackVideo",
+      "label": "Playback Video",
+      "type": "checkbox"
+    },
+    {
+      "group": "Media",
+      "name": "muteVideo",
+      "label": "Mute Video",
+      "type": "checkbox"
+    }
+  ]
+}
