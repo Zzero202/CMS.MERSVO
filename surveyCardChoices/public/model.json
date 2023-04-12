@@ -49,10 +49,29 @@
       "value": ""
     },
     {
-      "name": "choices",
+      "name": "choiceDirection",
+      "value": "vertical"
+    },
+    {
+      "name": "choiceColor",
+      "value": ""
+    },
+    {
+      "name": "choiceFontSettings",
+      "value": {
+        "size": 16,
+        "font": "Arial",
+        "alignment": "left",
+        "isItalic": false,
+        "isBold": true
+      }
+    },
+    {
+      "name": "choiceOptions",
       "value": [
         {
-          "choice": { "text": "" }
+          "label": "First Option",
+          "value": "first-value"
         }
       ]
     },

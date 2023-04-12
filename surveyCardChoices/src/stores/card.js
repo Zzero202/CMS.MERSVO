@@ -52,10 +52,29 @@ export const useCardStore = defineStore('card', {
         value: 'Dropdown'
       },
       {
-        name: 'choices',
+        name: 'choiceDirection',
+        value: 'vertical'
+      },
+      {
+        name: 'choiceColor',
+        value: ''
+      },
+      {
+        name: 'choiceFontSettings',
+        value: {
+          size: 16,
+          font: 'Arial',
+          alignment: 'left',
+          isItalic: false,
+          isBold: true
+        }
+      },
+      {
+        name: 'choiceOptions',
         value: [
           {
-            choice: { text: '' }
+            label: 'First Option',
+            value: 'first-value'
           }
         ]
       },
@@ -95,7 +114,11 @@ export const useCardStore = defineStore('card', {
     model: (state) => {
       const inputs = state.inputs || []
       return inputs.reduce((acc, input) => {
-        if (input.name !== 'btnActions' && input.name !== 'choices' && Array.isArray(input.value)) {
+        if (
+          input.name !== 'btnActions' &&
+          input.name !== 'choiceOptions' &&
+          Array.isArray(input.value)
+        ) {
           acc[input.name] = state.attachments[input.name] || []
         } else {
           acc[input.name] = input.value

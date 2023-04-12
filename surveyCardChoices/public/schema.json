@@ -73,26 +73,62 @@
       "type": "dropdown",
       "items": [
         { "label": "Multiple Answers", "value": "Multiple Answers" },
-        { "label": "one answer", "value": "one answer" }
+        { "label": "One Answer", "value": "One Answer" }
       ]
     },
     {
       "group": "Type",
-      "name": "choices",
-      "label": "",
+      "name": "choiceOptions",
+      "label": "Options",
       "type": "group",
       "options": {
         "group": [
           {
-            "name": "choice",
-            "label": "choice Label",
-            "type": "textbox",
+            "name": "label",
+            "label": "Option Label",
+            "type": "text",
             "columns": 12,
-            "options": { "isStyled": false },
-            "valueType": "menu"
+            "options": { "isStyled": false }
+          },
+          {
+            "name": "value",
+            "label": "Option value",
+            "type": "text",
+            "columns": 12,
+            "options": { "inline": true }
           }
         ]
       }
+    },
+    {
+      "group": "Type",
+      "name": "choiceFontSettings",
+      "label": "Settings",
+      "type": "fontSettings",
+      "options": {
+        "allowtransparency": false,
+        "allowempty": false
+      }
+    },
+    {
+      "group": "Type",
+      "name": "choiceColor",
+      "label": "Color",
+      "type": "colorpicker",
+      "options": {
+        "allowtransparency": false,
+        "allowempty": false
+      }
+    },
+    {
+      "group": "Type",
+      "name": "choiceDirection",
+      "label": "Direction",
+      "type": "dropdown",
+      "items": [
+        { "icon": "", "label": "Horizontal", "value": "horizontal" },
+        { "icon": "", "label": "Vertical", "value": "vertical" }
+      ]
     },
     {
       "group": "Button",

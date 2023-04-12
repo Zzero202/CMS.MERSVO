@@ -16,7 +16,7 @@
         </h4>
     </div>
       <div class="types q-mt-xl">
-        <choicesType :items="model.choices" :title="title"
+        <choices-type :choices="choices" :dropdownValue="dropdown.value"
             v-if="
             dropdown.value == 'Multiple Answers' ||
             dropdown.value == 'One Answer'
@@ -61,6 +61,11 @@ const label = computed(() => ({
   text: model.value?.labelText?.text,
   style: getTextSettings(model?.value.labelSettings || {}, model.value?.labelColor)
 }))
+// const teal = ref(title.value.text)
+// const org = ref(label.value.text)
+// const vall = computed(() => {
+//   return model.choices
+// })
 const dropdown = computed(() => ({
   value: model.value?.dropdownSelect
 }))
@@ -69,4 +74,20 @@ const button = computed(() => ({
   style: getTextSettings(model?.value.btnSettings || {}, model.value?.btnColor, model.value?.btnBg),
   actions: model?.value.btnActions
 }))
+const choices = computed(() => ({
+  settings: model.value?.choiceFontSettings,
+  color: model.value?.choiceColor,
+  options: model.value?.choiceOptions,
+  direction: model.value?.choiceDirection
+}))
 </script>
+
+<style lang="scss" scoped>
+.survey-card {
+  h4 {
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+}
+</style>
